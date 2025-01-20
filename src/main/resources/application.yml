@@ -2,7 +2,7 @@ spring:
   application:
     name: warehouse
   datasource:
-    url: jdbc:postgresql://localhost:5435/warehousedb
-    password: postgres
-    username: postgres
+    url: jdbc:postgresql://${POSTGRES_URL:localhost:5435}/warehousedb
+    password: ${POSTGRES_PASS:postgres}
+    username: ${POSTGRES_USER:postgres}
 
